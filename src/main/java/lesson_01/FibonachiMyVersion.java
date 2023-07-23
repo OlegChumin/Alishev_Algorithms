@@ -23,10 +23,16 @@ public class FibonachiMyVersion {
         return number;
     }
 
-    static void readDataFromConsoleTryWithResources() {
+    static int readDataFromConsoleTryWithResources() {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-
-
+        int number;
+        try {
+            number = Integer.parseInt(reader.readLine());
+            reader.close();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        return number;
     }
 
     static void printResultOnConsole(int result) {
