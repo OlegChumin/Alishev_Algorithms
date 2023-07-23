@@ -20,24 +20,24 @@ public class FibonachiMyVersion {
 
     }
 
-    static int readDataFromConsole() {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        String line;
-        int number;
-        try {
-            line = reader.readLine();
-            number = Integer.parseInt(line);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        } finally {
-            try {
-                reader.close();
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
-        }
-        return number;
-    }
+//    static int readDataFromConsole() {
+//        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+//        String line;
+//        int number;
+//        try {
+//            line = reader.readLine();
+//            number = Integer.parseInt(line);
+//        } catch (IOException e) {
+//            throw new RuntimeException(e);
+//        } finally {
+//            try {
+//                reader.close();
+//            } catch (IOException e) {
+//                throw new RuntimeException(e);
+//            }
+//        }
+//        return number;
+//    }
 
     /**
      * Метод readDataFromConsoleTryWithResources будет работать быстрее и предпочтительнее из-за использования
