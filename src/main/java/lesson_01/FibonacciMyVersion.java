@@ -12,7 +12,9 @@ public class FibonacciMyVersion {
         long timeStart = System.currentTimeMillis();
         printResultOnConsole(fibonacciMethod(readDataFromConsoleTryWithResources()));
         long timeEnd = System.currentTimeMillis();
-        System.out.println("Время на работу метода readDataFromConsoleTryWithResources() = " + (timeEnd - timeStart));
+
+        System.out.println("Время на работу метода readDataFromConsoleTryWithResources() = " +
+                ((double) (timeEnd - timeStart) / 1000) + " seconds");
         System.out.println();
 
 
