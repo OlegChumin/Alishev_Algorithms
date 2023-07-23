@@ -102,15 +102,5 @@ public class FibonachiMyVersion {
             // Возвращаем неизменяемую версию списка
             return Collections.unmodifiableList(fibonacciSequence);
         }
-
-        // Создание объекта ImmutableFibonacci с пустой последовательностью
-        public static Data empty() {
-            return new Data(Collections.emptyList());
-        }
-
-        // Создание объекта ImmutableFibonacci с заданной последовательностью
-        public static Data withSequence(List<Integer> fibonacciSequence) {
-            return new Data(fibonacciSequence);
-        }
     }
 }
