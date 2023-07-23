@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0de804b6-a4fd-47aa-a85d-d35e6122a786" name="Changes" comment="CRUDE code">
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson_02/img_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lesson_02/Fibonacci.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson_02/Fibonacci.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson_06/GreedyAlgorithms.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +52,7 @@
       <recent name="lesson_02" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.lesson_02.Fibonacci">
+  <component name="RunManager" selected="Application.GreedyAlgorithms">
     <configuration name="Fibonacci" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lesson_01.Fibonacci" />
       <module name="Alishev_Algorithms" />
@@ -79,6 +79,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GreedyAlgorithms" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lesson_06.GreedyAlgorithms" />
+      <module name="Alishev_Algorithms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lesson_06.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="lesson_02.Fibonacci" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lesson_02.Fibonacci" />
       <module name="Alishev_Algorithms" />
@@ -94,6 +107,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GreedyAlgorithms" />
         <item itemvalue="Application.lesson_02.Fibonacci" />
         <item itemvalue="Application.Fibonacci" />
         <item itemvalue="Application.FibonacciMyVersion" />
@@ -110,7 +124,7 @@
       <updated>1689865320906</updated>
       <workItem from="1689865321943" duration="3397000" />
       <workItem from="1689974795090" duration="350000" />
-      <workItem from="1690088924281" duration="9065000" />
+      <workItem from="1690088924281" duration="16680000" />
     </task>
     <task id="LOCAL-00001" summary="CRUDE code">
       <option name="closed" value="true" />
@@ -272,7 +286,39 @@
       <option name="project" value="LOCAL" />
       <updated>1690110455377</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="CRUDE code">
+      <option name="closed" value="true" />
+      <created>1690112762394</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1690112762394</updated>
+    </task>
+    <task id="LOCAL-00022" summary="CRUDE code">
+      <option name="closed" value="true" />
+      <created>1690112774357</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1690112774357</updated>
+    </task>
+    <task id="LOCAL-00023" summary="CRUDE code">
+      <option name="closed" value="true" />
+      <created>1690114745419</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1690114745419</updated>
+    </task>
+    <task id="LOCAL-00024" summary="CRUDE code">
+      <option name="closed" value="true" />
+      <created>1690115417195</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1690115417195</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
