@@ -3,6 +3,9 @@ package lesson_01;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 public class FibonachiMyVersion {
     public static void main(String[] args) {
@@ -73,26 +76,41 @@ public class FibonachiMyVersion {
     }
 
     private Data fibonachiMethod(int number) {
-
-        return new Data(number);
+        List<Integer> fibonachiSequience = new ArrayList<>();
+        fibonachiSequience.add(0);
+        fibonachiSequience.add(1);
+        for (int i = 2; i <= number; i++) {
+            fibonachiSequience.add(fibonachiSequience.get(i - 1) + fibonachiSequience.get(i - 2));
+        }
+    return new Data(fibonachiSequience);
     }
 
 
     private static final class Data {
-        private final int value;
-//        private final Data data;
+        private final List<Integer> fibonacciSequence;
 
-        public Data(int value) {
-            this.value = value;
-//            this.data = data != null ? new Data(data.value, data.data) : null;
+        public Data(List<Integer> fibonacciSequence) {
+            if (fibonacciSequence == null) {
+                throw new IllegalArgumentException("fibonacciSequence cannot not be NULL!");
+            }
+            // Создаем новый список и копируем элементы из переданного списка
+            this.fibonacciSequence = new ArrayList<>(fibonacciSequence);
         }
 
-        public int getValue() {
-            return value;
+        // Геттер для доступа к неизменяемому списку
+        public List<Integer> getFibonacciSequence() {
+            // Возвращаем неизменяемую версию списка
+            return Collections.unmodifiableList(fibonacciSequence);
         }
 
-//        public Data getData() {
-//            return data != null ? new Data(data.value, data.data) : null;
-//        }
+        // Создание объекта ImmutableFibonacci с пустой последовательностью
+        public static Data empty() {
+            return new Data(Collections.emptyList());
+        }
+
+        // Создание объекта ImmutableFibonacci с заданной последовательностью
+        public static Data withSequence(List<Integer> fibonacciSequence) {
+            return new Data(fibonacciSequence);
+        }
     }
 }
