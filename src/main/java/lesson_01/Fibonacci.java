@@ -2,7 +2,10 @@ package lesson_01;
 
 public class Fibonacci {
     public static void main(String[] args) {
-
+        long startTime = System.currentTimeMillis();
+        System.out.println(fibNative(45));
+        long endTime = System.currentTimeMillis();
+        System.out.println((endTime - startTime));
     }
 
     //наивный медленный алгоритм
@@ -12,7 +15,7 @@ public class Fibonacci {
         } else if (n == 1) {
             return 1L;
         } else {
-            return 0L;
+            return fibNative(n - 1) + fibNative(n - 2);
         }
     }
 }

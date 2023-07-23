@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0de804b6-a4fd-47aa-a85d-d35e6122a786" name="Changes" comment="CRUDE code">
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson_01/img_1.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lesson_01/FibonachiMyVersion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson_01/FibonachiMyVersion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lesson_01/Fibonacci.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson_01/Fibonacci.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,9 +47,22 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration name="FibonachiMyVersion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson_01.FibonachiMyVersion" />
+  <component name="RunManager" selected="Application.Fibonacci">
+    <configuration name="Fibonacci" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lesson_01.Fibonacci" />
+      <module name="Alishev_Algorithms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lesson_01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FibonacciMyVersion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lesson_01.FibonacciMyVersion" />
       <module name="Alishev_Algorithms" />
       <extension name="coverage">
         <pattern>
@@ -64,7 +76,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.FibonachiMyVersion" />
+        <item itemvalue="Application.Fibonacci" />
+        <item itemvalue="Application.FibonacciMyVersion" />
       </list>
     </recent_temporary>
   </component>
@@ -78,7 +91,7 @@
       <updated>1689865320906</updated>
       <workItem from="1689865321943" duration="3397000" />
       <workItem from="1689974795090" duration="350000" />
-      <workItem from="1690088924281" duration="5297000" />
+      <workItem from="1690088924281" duration="6231000" />
     </task>
     <task id="LOCAL-00001" summary="CRUDE code">
       <option name="closed" value="true" />
@@ -176,7 +189,31 @@
       <option name="project" value="LOCAL" />
       <updated>1690093736884</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="CRUDE code">
+      <option name="closed" value="true" />
+      <created>1690094435405</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1690094435405</updated>
+    </task>
+    <task id="LOCAL-00014" summary="CRUDE code">
+      <option name="closed" value="true" />
+      <created>1690094584349</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1690094584349</updated>
+    </task>
+    <task id="LOCAL-00015" summary="CRUDE code">
+      <option name="closed" value="true" />
+      <created>1690094787351</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1690094787351</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
