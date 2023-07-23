@@ -7,11 +7,17 @@ import java.io.InputStreamReader;
 public class FibonachiMyVersion {
     public static void main(String[] args) {
         long timeStart = System.currentTimeMillis();
-        printResultOnConsole(readDataFromConsoleTryWithResources());
+        printResultOnConsole(readDataFromConsole());
         long timeEnd = System.currentTimeMillis();
-        System.out.println(timeEnd - timeStart);
+        System.out.println("Время на работу метода readDataFromConsole() = " + (timeEnd - timeStart));
+        System.out.println();
 
-        printResultOnConsole(readDataFromConsoleTryWithResources());
+//        timeStart = System.currentTimeMillis();
+//        printResultOnConsole(readDataFromConsole());
+//        timeEnd = System.currentTimeMillis();
+//        System.out.println("Время на работу метода readDataFromConsole() = " + (timeEnd - timeStart));
+//        System.out.println();
+
     }
 
     static int readDataFromConsole() {
@@ -21,9 +27,14 @@ public class FibonachiMyVersion {
         try {
             line = reader.readLine();
             number = Integer.parseInt(line);
-            reader.close();
         } catch (IOException e) {
             throw new RuntimeException(e);
+        } finally {
+            try {
+                reader.close();
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
         }
         return number;
     }
@@ -56,8 +67,9 @@ public class FibonachiMyVersion {
 
     static void printResultOnConsole(int result) {
         System.out.println("--------------------------------");
-        System.out.printf("%n result = %d%n", result);
+        System.out.printf("result = %d%n", result);
         System.out.println("--------------------------------");
+        System.out.println();
     }
 
 
