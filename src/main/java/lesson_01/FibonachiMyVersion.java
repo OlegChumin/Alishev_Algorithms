@@ -7,9 +7,9 @@ import java.io.InputStreamReader;
 public class FibonachiMyVersion {
     public static void main(String[] args) {
         long timeStart = System.currentTimeMillis();
-        printResultOnConsole(readDataFromConsole());
+        printResultOnConsole(readDataFromConsoleTryWithResources());
         long timeEnd = System.currentTimeMillis();
-        System.out.println("Время на работу метода readDataFromConsole() = " + (timeEnd - timeStart));
+        System.out.println("Время на работу метода readDataFromConsoleTryWithResources() = " + (timeEnd - timeStart));
         System.out.println();
 
 //        timeStart = System.currentTimeMillis();
@@ -72,22 +72,27 @@ public class FibonachiMyVersion {
         System.out.println();
     }
 
+    private Data fibonachiMethod(int number) {
+
+        return new Data(number);
+    }
+
 
     private static final class Data {
         private final int value;
-        private final Data data;
+//        private final Data data;
 
-        public Data(int value, Data data) {
+        public Data(int value) {
             this.value = value;
-            this.data = data != null ? new Data(data.value, data.data) : null;
+//            this.data = data != null ? new Data(data.value, data.data) : null;
         }
 
         public int getValue() {
             return value;
         }
 
-        public Data getData() {
-            return data != null ? new Data(data.value, data.data) : null;
-        }
+//        public Data getData() {
+//            return data != null ? new Data(data.value, data.data) : null;
+//        }
     }
 }
