@@ -7,10 +7,10 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class FibonachiMyVersion {
+public class FibonacciMyVersion {
     public static void main(String[] args) {
         long timeStart = System.currentTimeMillis();
-        printResultOnConsole(fibonachiMethod(readDataFromConsoleTryWithResources()));
+        printResultOnConsole(fibonacciMethod(readDataFromConsoleTryWithResources()));
         long timeEnd = System.currentTimeMillis();
         System.out.println("Время на работу метода readDataFromConsoleTryWithResources() = " + (timeEnd - timeStart));
         System.out.println();
@@ -77,14 +77,14 @@ public class FibonachiMyVersion {
         System.out.println();
     }
 
-    private static Data fibonachiMethod(long number) {
-        List<Long> fibonachiSequience = new ArrayList<>();
-        fibonachiSequience.add(0L);
-        fibonachiSequience.add(1L);
+    private static Data fibonacciMethod(long number) {
+        List<Long> fibonacciSequience = new ArrayList<>();
+        fibonacciSequience.add(0L);
+        fibonacciSequience.add(1L);
         for (long i = 2; i <= number; i++) {
-            fibonachiSequience.add(fibonachiSequience.get((int) (i - 1)) + fibonachiSequience.get((int) (i - 2)));
+            fibonacciSequience.add(fibonacciSequience.get((int) (i - 1)) + fibonacciSequience.get((int) (i - 2)));
         }
-        return new Data(fibonachiSequience);
+        return new Data(fibonacciSequience);
     }
 
 
