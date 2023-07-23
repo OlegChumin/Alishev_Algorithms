@@ -14,9 +14,10 @@ public class GreedyAlgorithms {
     private static int minStops(int[] stations, int capacity) {
         int result = 0;
         int currentStop = 0;
-        while (currentStop < stations.length) {
+        while (currentStop < stations.length - 1) {
             int nextStop = currentStop;
-            while (nextStop < stations.length &&
+
+            while (nextStop < stations.length - 1 &&
                     stations[nextStop + 1] - stations[currentStop] <= capacity)
                 nextStop++;
             if (currentStop == nextStop) {
