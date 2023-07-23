@@ -67,7 +67,7 @@ public class FibonachiMyVersion {
 
     static void printResultOnConsole(int result) {
         System.out.println("--------------------------------");
-        System.out.printf("result = %d%n", result);
+        System.out.printf("\"Получено число для рассчета ряда Фибоначчи = \" %d%n", result);
         System.out.println("--------------------------------");
         System.out.println();
     }
