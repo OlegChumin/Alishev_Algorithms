@@ -23,12 +23,26 @@ public class FibonachiMyVersion {
         return number;
     }
 
+    /**
+     * Метод readDataFromConsoleTryWithResources будет работать быстрее и предпочтительнее из-за использования
+     * try-with-resources. Это связано с тем, что try-with-resources автоматически закрывает ресурсы после завершения
+     * блока try, что позволяет избежать утечек ресурсов и сокращает объем кода.
+     *
+     * В методе readDataFromConsole, BufferedReader не закрывается явно, что может привести к утечке ресурсов, если
+     * метод вызывается в контексте другого метода или приложения с большим количеством операций ввода-вывода. Кроме
+     * того, в этом методе объект BufferedReader создается вне блока try и закрывается явно, что усложняет код.
+     *
+     * В методе readDataFromConsoleTryWithResources, BufferedReader создается внутри блока try-with-resources, и после
+     * завершения блока try BufferedReader автоматически закрывается. Это упрощает код и гарантирует, что ресурсы будут
+     * корректно закрыты даже в случае возникновения исключения. Поэтому второй метод предпочтительнее, и его
+     * использование рекомендуется.
+     * */
+
     static int readDataFromConsoleTryWithResources() {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         int number;
         try {
+            BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
             number = Integer.parseInt(reader.readLine());
-            reader.close();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
