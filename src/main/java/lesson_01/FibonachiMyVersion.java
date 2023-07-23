@@ -6,7 +6,12 @@ import java.io.InputStreamReader;
 
 public class FibonachiMyVersion {
     public static void main(String[] args) {
-        readDataFromConsole();
+        long timeStart = System.currentTimeMillis();
+        printResultOnConsole(readDataFromConsoleTryWithResources());
+        long timeEnd = System.currentTimeMillis();
+        System.out.println(timeEnd - timeStart);
+
+        printResultOnConsole(readDataFromConsoleTryWithResources());
     }
 
     static int readDataFromConsole() {
@@ -27,16 +32,16 @@ public class FibonachiMyVersion {
      * Метод readDataFromConsoleTryWithResources будет работать быстрее и предпочтительнее из-за использования
      * try-with-resources. Это связано с тем, что try-with-resources автоматически закрывает ресурсы после завершения
      * блока try, что позволяет избежать утечек ресурсов и сокращает объем кода.
-     *
+     * <p>
      * В методе readDataFromConsole, BufferedReader не закрывается явно, что может привести к утечке ресурсов, если
      * метод вызывается в контексте другого метода или приложения с большим количеством операций ввода-вывода. Кроме
      * того, в этом методе объект BufferedReader создается вне блока try и закрывается явно, что усложняет код.
-     *
+     * <p>
      * В методе readDataFromConsoleTryWithResources, BufferedReader создается внутри блока try-with-resources, и после
      * завершения блока try BufferedReader автоматически закрывается. Это упрощает код и гарантирует, что ресурсы будут
      * корректно закрыты даже в случае возникновения исключения. Поэтому второй метод предпочтительнее, и его
      * использование рекомендуется.
-     * */
+     */
 
     static int readDataFromConsoleTryWithResources() {
         int number;
@@ -54,6 +59,7 @@ public class FibonachiMyVersion {
         System.out.printf("%n result = %d%n", result);
         System.out.println("--------------------------------");
     }
+
 
     private static final class Data {
         private final int value;
