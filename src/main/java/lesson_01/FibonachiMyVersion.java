@@ -10,10 +10,11 @@ import java.util.List;
 public class FibonachiMyVersion {
     public static void main(String[] args) {
         long timeStart = System.currentTimeMillis();
-        printResultOnConsole(readDataFromConsoleTryWithResources());
+        printResultOnConsole(fibonachiMethod(readDataFromConsoleTryWithResources()));
         long timeEnd = System.currentTimeMillis();
         System.out.println("Время на работу метода readDataFromConsoleTryWithResources() = " + (timeEnd - timeStart));
         System.out.println();
+
 
 //        timeStart = System.currentTimeMillis();
 //        printResultOnConsole(readDataFromConsole());
@@ -57,39 +58,40 @@ public class FibonachiMyVersion {
      * использование рекомендуется.
      */
 
-    static int readDataFromConsoleTryWithResources() {
-        int number;
+    static long readDataFromConsoleTryWithResources() {
+        long number;
         try {
             BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-            number = Integer.parseInt(reader.readLine());
+            number = Long.parseLong(reader.readLine());
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
         return number;
     }
 
-    static void printResultOnConsole(int result) {
+    static void printResultOnConsole(Data data) {
         System.out.println("--------------------------------");
-        System.out.printf("\"Получено число для рассчета ряда Фибоначчи = \" %d%n", result);
+        System.out.printf("\"Получено число для рассчета ряда Фибоначчи = \" %d%n", data.getFibonacciSequence().size() - 1);
         System.out.println("--------------------------------");
+        System.out.println("Последовательность Фибоначчи для заданного N " + data.getFibonacciSequence());
         System.out.println();
     }
 
-    private Data fibonachiMethod(int number) {
-        List<Integer> fibonachiSequience = new ArrayList<>();
-        fibonachiSequience.add(0);
-        fibonachiSequience.add(1);
-        for (int i = 2; i <= number; i++) {
-            fibonachiSequience.add(fibonachiSequience.get(i - 1) + fibonachiSequience.get(i - 2));
+    private static Data fibonachiMethod(long number) {
+        List<Long> fibonachiSequience = new ArrayList<>();
+        fibonachiSequience.add(0L);
+        fibonachiSequience.add(1L);
+        for (long i = 2; i <= number; i++) {
+            fibonachiSequience.add(fibonachiSequience.get((int) (i - 1)) + fibonachiSequience.get((int) (i - 2)));
         }
-    return new Data(fibonachiSequience);
+        return new Data(fibonachiSequience);
     }
 
 
     private static final class Data {
-        private final List<Integer> fibonacciSequence;
+        private final List<Long> fibonacciSequence;
 
-        public Data(List<Integer> fibonacciSequence) {
+        public Data(List<Long> fibonacciSequence) {
             if (fibonacciSequence == null) {
                 throw new IllegalArgumentException("fibonacciSequence cannot not be NULL!");
             }
@@ -98,7 +100,7 @@ public class FibonachiMyVersion {
         }
 
         // Геттер для доступа к неизменяемому списку
-        public List<Integer> getFibonacciSequence() {
+        public List<Long> getFibonacciSequence() {
             // Возвращаем неизменяемую версию списка
             return Collections.unmodifiableList(fibonacciSequence);
         }
