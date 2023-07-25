@@ -3,6 +3,7 @@ package lesson_10;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.sql.SQLOutput;
 import java.util.Random;
 
 public class LinearSearch {
@@ -14,6 +15,7 @@ public class LinearSearch {
     }
 
     private static int getLengthOfArrayToGenerate() throws IOException {
+        System.out.println("Pls. enter length of array to be generated: ");
         return Integer.parseInt((new BufferedReader(new InputStreamReader(System.in))).readLine());
     }
 
