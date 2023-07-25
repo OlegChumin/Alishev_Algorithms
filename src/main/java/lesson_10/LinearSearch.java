@@ -12,7 +12,7 @@ import java.util.Random;
 import static java.lang.Math.random;
 
 public class LinearSearch {
-    private static Random random = new Random();
+    private static final Random random = new Random();
     private static final int END_RANGE_OF_RANDOM = 1_000_001;
 
     public static void main(String[] args) {
@@ -32,6 +32,10 @@ public class LinearSearch {
         int[] array = new int[nLength];
         Arrays.fill(array, random.nextInt(END_RANGE_OF_RANDOM));
         return array;
+    }
+
+    private static int getRandomElementFromArray(int[] array) {
+        return array[random.nextInt(array.length - 1)];
     }
 
 }
