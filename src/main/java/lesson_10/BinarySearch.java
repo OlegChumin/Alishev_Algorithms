@@ -21,8 +21,13 @@ public class BinarySearch {
         long resultTime = endTime - startTime;
 
         System.out.println("indexOfElement = " + indexOfElement);
-        System.out.println("Время поиска элемента = " + randomElement + " = " + resultTime + " индекс элемента = " + indexOfElement);
-        System.out.println("Проверка, элемент из массива по индексу " + indexOfElement + " = " + array[indexOfElement]);
+        System.out.println("Время поиска элемента = "
+                + randomElement + " = "
+                + resultTime + " индекс элемента = "
+                + indexOfElement);
+        System.out.println("Проверка, элемент из массива по индексу "
+                + indexOfElement + " = "
+                + array[indexOfElement]);
     }
 
     private static int getLengthOfArrayToBeGenerated() {
@@ -54,11 +59,6 @@ public class BinarySearch {
     }
 
     private static int binarySearchOfRandomElementInArray(int[] array, int searchingElement) {
-        for (int i = 0; i < array.length; i++) {
-            if (searchingElement == array[i]) {
-                return i;
-            }
-        }
-        return -1;
+
     }
 }
