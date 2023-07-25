@@ -13,8 +13,7 @@ import static java.lang.Math.random;
 
 public class LinearSearch {
     private static Random random = new Random();
-    private static final int START_RANGE_OF_RANDOM = 0;
-    private static final int END_RANGE_OF_RANDOM = 1_000_000;
+    private static final int END_RANGE_OF_RANDOM = 1_000_001;
 
     public static void main(String[] args) {
         int[] array = generateAndFillIntRandomArray(getLengthOfArrayToBeGenerated());
@@ -31,7 +30,7 @@ public class LinearSearch {
 
     private static int[] generateAndFillIntRandomArray(int nLength) {
         int[] array = new int[nLength];
-        Arrays.fill(array, random.nextInt(101));
+        Arrays.fill(array, random.nextInt(END_RANGE_OF_RANDOM));
         return array;
     }
 
