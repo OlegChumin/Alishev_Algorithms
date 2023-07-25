@@ -61,8 +61,12 @@ public class BinarySearch {
 
     private static int binarySearchOfRandomElementInArray(int[] array, int searchingElement) {
         Arrays.sort(array);
+        int middleElement = array[(array.length - 1) / 2];
+        if (searchingElement > middleElement) {
 
+        } else {
 
+        }
 
         return -1;
     }
