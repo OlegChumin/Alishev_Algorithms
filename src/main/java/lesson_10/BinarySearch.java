@@ -5,6 +5,7 @@ public class BinarySearch {
         int[] sortedArray = {-1, 3, 5, 8, 10, 15, 16, 20};
         int searchingElement = 16;
         System.out.println(binarySearchOfRandomElementInArray(sortedArray, searchingElement));
+        System.out.println(binaryRecursionSearch(sortedArray, searchingElement, 0, sortedArray.length - 1));
     }
 
 
@@ -27,15 +28,15 @@ public class BinarySearch {
         return -1;
     }
 
-    private static int binaryReqursionSearch(int[] sortedArray, int searchingElement, int minIndex, int maxIndex) {
+    private static int binaryRecursionSearch(int[] sortedArray, int searchingElement, int minIndex, int maxIndex) {
         int middleIndex = minIndex + (maxIndex - minIndex) / 2;
 
         if (searchingElement == sortedArray[middleIndex]) {
             return middleIndex;
         } else if (searchingElement < sortedArray[middleIndex]) {
-            return binaryReqursionSearch(sortedArray, searchingElement, minIndex, middleIndex - 1);
+            return binaryRecursionSearch(sortedArray, searchingElement, minIndex, middleIndex - 1);
         } else {
-            return binaryReqursionSearch(sortedArray, searchingElement, middleIndex + 1, maxIndex);
+            return binaryRecursionSearch(sortedArray, searchingElement, middleIndex + 1, maxIndex);
         }
     }
 }
