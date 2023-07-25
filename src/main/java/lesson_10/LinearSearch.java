@@ -3,12 +3,11 @@ package lesson_10;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Random;
 
 public class LinearSearch {
-    private static Random random = new Random();
+    private static final Random random = new Random();
     private static final int END_RANGE_OF_RANDOM = 1_000_001;
 
     public static void main(String[] args) {
