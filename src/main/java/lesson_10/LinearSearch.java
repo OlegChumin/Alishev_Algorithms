@@ -42,7 +42,7 @@ public class LinearSearch {
         for (int i = 0; i < array.length; i++) {
             int randomValue = random.nextInt(END_RANGE_OF_RANDOM);
             if (!uniqueValues.contains(randomValue)) {
-                array[i] =  randomValue;
+                array[i] = randomValue;
                 uniqueValues.add(randomValue);
             }
         }
@@ -55,13 +55,11 @@ public class LinearSearch {
     }
 
     private static int linearSearchOfRandomElementInArray(int[] array, int searchingElement) {
-        int index = -1;
         for (int i = 0; i < array.length; i++) {
             if (searchingElement == array[i]) {
-                index = i;
-                break;
+                return i;
             }
         }
-        return index;
+        return -1;
     }
 }
