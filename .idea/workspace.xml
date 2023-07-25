@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0de804b6-a4fd-47aa-a85d-d35e6122a786" name="Changes" comment="CRUDE code">
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson_10/img_6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lesson_10/BinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson_10/BinarySearch.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -145,23 +143,7 @@
       <workItem from="1690127298372" duration="3023000" />
       <workItem from="1690136931264" duration="4015000" />
       <workItem from="1690281190812" duration="10431000" />
-      <workItem from="1690294373661" duration="4203000" />
-    </task>
-    <task id="LOCAL-00003" summary="CRUDE code">
-      <option name="closed" value="true" />
-      <created>1690091167497</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1690091167497</updated>
-    </task>
-    <task id="LOCAL-00004" summary="CRUDE code">
-      <option name="closed" value="true" />
-      <created>1690091231268</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1690091231269</updated>
+      <workItem from="1690294373661" duration="5278000" />
     </task>
     <task id="LOCAL-00005" summary="CRUDE code">
       <option name="closed" value="true" />
@@ -539,7 +521,23 @@
       <option name="project" value="LOCAL" />
       <updated>1690307465724</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="CRUDE code">
+      <option name="closed" value="true" />
+      <created>1690310524303</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1690310524303</updated>
+    </task>
+    <task id="LOCAL-00053" summary="CRUDE code">
+      <option name="closed" value="true" />
+      <created>1690310706140</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1690310706140</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

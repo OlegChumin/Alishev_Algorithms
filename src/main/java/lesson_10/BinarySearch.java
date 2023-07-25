@@ -8,7 +8,6 @@ public class BinarySearch {
         System.out.println(binaryRecursionSearch(sortedArray, searchingElement, 0, sortedArray.length - 1));
     }
 
-
     private static int binarySearchOfRandomElementInArray(int[] array, int searchingElement) {
         int minElementIndex = 0; // индекс первого минимального элемента в отсортированном массиве
         int maxElementIndex = array.length - 1; // индекс замыкающего максимального элемента в отсортированном массиве
