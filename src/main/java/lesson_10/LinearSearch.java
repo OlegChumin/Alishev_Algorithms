@@ -10,13 +10,17 @@ public class LinearSearch {
     private static final Random random = new Random();
 
     public static void main(String[] args) {
-        generateIntRandomArray(9);
+        int[] array = generateIntRandomArray(getLengthOfArrayToGenerate());
 
     }
 
-    private static int getLengthOfArrayToGenerate() throws IOException {
+    private static int getLengthOfArrayToGenerate() {
         System.out.println("Pls. enter length of array to be generated: ");
-        return Integer.parseInt((new BufferedReader(new InputStreamReader(System.in))).readLine());
+        try {
+            return Integer.parseInt((new BufferedReader(new InputStreamReader(System.in))).readLine());
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     private static int[] generateIntRandomArray(int nLength) {
