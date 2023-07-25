@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0de804b6-a4fd-47aa-a85d-d35e6122a786" name="Changes" comment="CRUDE code" />
+    <list default="true" id="0de804b6-a4fd-47aa-a85d-d35e6122a786" name="Changes" comment="CRUDE code">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lesson_10/LinearSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson_10/LinearSearch.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,20 +53,7 @@
       <recent name="lesson_02" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.FractionalKnapsack">
-    <configuration name="Fibonacci" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson_01.Fibonacci" />
-      <module name="Alishev_Algorithms" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lesson_01.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.LinearSearch">
     <configuration name="FractionalKnapsack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lesson_09.FractionalKnapsack" />
       <module name="Alishev_Algorithms" />
@@ -83,6 +73,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="lesson_06.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LinearSearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lesson_10.LinearSearch" />
+      <module name="Alishev_Algorithms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lesson_10.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -118,11 +121,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LinearSearch" />
         <item itemvalue="Application.FractionalKnapsack" />
         <item itemvalue="Application.lesson_07.GreedyAlgorithms" />
         <item itemvalue="Application.GreedyAlgorithms" />
         <item itemvalue="Application.lesson_02.Fibonacci" />
-        <item itemvalue="Application.Fibonacci" />
       </list>
     </recent_temporary>
   </component>
@@ -139,7 +142,7 @@
       <workItem from="1690088924281" duration="19539000" />
       <workItem from="1690127298372" duration="3023000" />
       <workItem from="1690136931264" duration="4015000" />
-      <workItem from="1690281190812" duration="2642000" />
+      <workItem from="1690281190812" duration="5363000" />
     </task>
     <task id="LOCAL-00001" summary="CRUDE code">
       <option name="closed" value="true" />
@@ -453,7 +456,15 @@
       <option name="project" value="LOCAL" />
       <updated>1690283847071</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="CRUDE code">
+      <option name="closed" value="true" />
+      <created>1690284002335</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1690284002335</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
