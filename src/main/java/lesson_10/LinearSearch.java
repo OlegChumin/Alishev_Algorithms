@@ -19,9 +19,10 @@ public class LinearSearch {
         long startTime = System.currentTimeMillis();
         int indexOfElement = linearSearchOfRandomElementInArray(array, randomElement);
         long endTime = System.currentTimeMillis();
+        long resultTime = endTime - startTime;
 
         System.out.println("indexOfElement = " + indexOfElement);
-        System.out.println("Время поиска элемента = " + randomElement + " = " + (endTime - startTime) + " индекс элемента = " + indexOfElement);
+        System.out.println("Время поиска элемента = " + randomElement + " = " + resultTime + " индекс элемента = " + indexOfElement);
         System.out.println("Проверка, элемент из массива по индексу " + indexOfElement + " = " + array[indexOfElement]);
     }
 
