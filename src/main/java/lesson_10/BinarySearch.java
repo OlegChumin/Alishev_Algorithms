@@ -1,73 +1,41 @@
 package lesson_10;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Random;
-
 public class BinarySearch {
-    private static final Random random = new Random();
-    private static final int END_RANGE_OF_RANDOM = 1_000_001;
-
     public static void main(String[] args) {
-        int[] array = generateAndFillIntRandomArray(getLengthOfArrayToBeGenerated());
-//        System.out.println(Arrays.toString(array));
-        int randomElement = getRandomElementFromArray(array);
-        System.out.println("randomElement = " + randomElement);
-        long startTime = System.currentTimeMillis();
-        int indexOfElement = binarySearchOfRandomElementInArray(array, randomElement);
-        long endTime = System.currentTimeMillis();
-        long resultTime = endTime - startTime;
-
-        System.out.println("indexOfElement = " + indexOfElement);
-        System.out.println("Время поиска элемента = "
-                + randomElement + " = "
-                + resultTime + " индекс элемента = "
-                + indexOfElement);
-        System.out.println("Проверка, элемент из массива по индексу "
-                + indexOfElement + " = "
-                + array[indexOfElement]);
+        int[] sortedArray = {-1, 3, 5, 8, 10, 15, 16, 20};
+        int searchingElement = 16;
+        System.out.println(binarySearchOfRandomElementInArray(sortedArray, searchingElement));
     }
 
-    private static int getLengthOfArrayToBeGenerated() {
-        System.out.println("Pls. enter length of array to be generated: ");
-        try {
-            return Integer.parseInt((new BufferedReader(new InputStreamReader(System.in))).readLine());
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-    }
-
-    private static int[] generateAndFillIntRandomArray(int nLength) {
-        int[] array = new int[nLength];
-        HashSet<Integer> uniqueValues = new HashSet<>();
-
-        for (int i = 0; i < array.length; i++) {
-            int randomValue = random.nextInt(END_RANGE_OF_RANDOM);
-            if (!uniqueValues.contains(randomValue)) {
-                array[i] = randomValue;
-                uniqueValues.add(randomValue);
-            }
-        }
-        return array;
-    }
-
-    private static int getRandomElementFromArray(int[] array) {
-        int randomIndex = random.nextInt(array.length - 1);
-        return array[randomIndex];
-    }
 
     private static int binarySearchOfRandomElementInArray(int[] array, int searchingElement) {
-        Arrays.sort(array);
-        int middleElement = array[(array.length - 1) / 2];
-        if (searchingElement > middleElement) {
-
-        } else {
-
+        int minElementIndex = 0; // индекс первого минимального элемента в отсортированном массиве
+        int maxElementIndex = array.length - 1; // индекс замыкающего максимального элемента в отсортированном массиве
+        // searchingElement == 18
+        // [0  1  2   3   4   5   6   7   8   9] индексы
+        // [3, 4, 7, 10, 11, 14, 17, 18, 22, 30] элементы
+        while (minElementIndex <= maxElementIndex) {
+            int middleElementIndex = minElementIndex + (maxElementIndex - minElementIndex) / 2; // индекс среднего элемента в теущм массиве
+            if (searchingElement < array[middleElementIndex]) {
+                maxElementIndex = middleElementIndex - 1;
+            } else if (searchingElement > array[middleElementIndex]) {
+                minElementIndex = middleElementIndex + 1;
+            } else {
+                return middleElementIndex;
+            }
         }
-
         return -1;
+    }
+
+    private static int binaryReqursionSearch(int[] sortedArray, int searchingElement, int minIndex, int maxIndex) {
+        int middleIndex = minIndex + (maxIndex - minIndex) / 2;
+
+        if (searchingElement == sortedArray[middleIndex]) {
+            return middleIndex;
+        } else if (searchingElement < sortedArray[middleIndex]) {
+            return binaryReqursionSearch(sortedArray, searchingElement, minIndex, middleIndex - 1);
+        } else {
+            return binaryReqursionSearch(sortedArray, searchingElement, middleIndex + 1, maxIndex);
+        }
     }
 }
