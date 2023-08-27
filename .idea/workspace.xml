@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0de804b6-a4fd-47aa-a85d-d35e6122a786" name="Changes" comment="CRUDE code">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +61,7 @@
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
     "ruby.rails.projectView.checked": "true",
-    "settings.editor.selected.configurable": "preferences.keymap",
+    "settings.editor.selected.configurable": "ktor",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -168,14 +167,7 @@
       <workItem from="1693122542016" duration="106000" />
       <workItem from="1693122699854" duration="109000" />
       <workItem from="1693122830193" duration="154000" />
-    </task>
-    <task id="LOCAL-00005" summary="CRUDE code">
-      <option name="closed" value="true" />
-      <created>1690091425957</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1690091425957</updated>
+      <workItem from="1693122994383" duration="687000" />
     </task>
     <task id="LOCAL-00006" summary="CRUDE code">
       <option name="closed" value="true" />
@@ -561,7 +553,15 @@
       <option name="project" value="LOCAL" />
       <updated>1690310706140</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="CRUDE code">
+      <option name="closed" value="true" />
+      <created>1693123021652</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1693123021653</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
